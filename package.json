@@ -5,10 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "server": "nodemon ./server/bin/www"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "cookie-parser": "~1.4.3",
     "core-js": "^2.6.5",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "serve-favicon": "^2.5.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -20,8 +29,9 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "nodemon": "^1.19.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
